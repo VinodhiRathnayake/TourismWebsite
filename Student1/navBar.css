@@ -1,0 +1,264 @@
+* {
+    text-decoration: none;
+    scroll-behavior: smooth !important;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.logo{
+    position: relative;
+    right: 200px;
+    bottom: 2px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+}   
+
+.navbar{
+    position: relative;
+    /* left: auto; */
+    display:flex;
+}
+
+
+.navbar a{
+    color: var(--bg-color);
+    font-size: var(--p-font);   
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+
+.navbar a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+.navbar .navButton{
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 20px 10px;
+    cursor: pointer;
+    transition: ease 0.4s;
+    padding: 10px 15px;
+}
+
+.nowOn {
+    border: 2px solid white;
+}
+
+.navbar li:hover .dropDown {
+    display: block;
+}
+
+.dropDown {
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    display: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.dropDown:hover {
+    display: block;
+    
+}
+.dropDown li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.dropDown ul {
+    padding-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.dropDownItem {
+    position: relative;
+    padding: 0 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: ease 0.4s;
+    padding: 10px 20px;
+    font-family:"Poppins";
+    background-color: rgb(255, 249, 196);
+    border-radius: 3px;
+    transition: ease 0.4s;
+    width: 160px;
+    text-align: center;
+   
+}
+
+
+.dropDownItem:hover {
+    background-color: rgb(244, 255, 117);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.459);
+    justify-content: center;
+}
+
+
+.navbar li{
+    position: relative;
+}
+
+/* Styling for the menu icon */
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+header.sticky{
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.sticky .logo{
+    color: var(--t);
+
+}
+
+.sticky .navbar a{
+    color: var(--text-color);
+}
+
+  /* Media queries for responsiveness */
+  
+ @media (max-width: 1400px){
+    header{
+        padding: 17px 3%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+     
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+
+   
+ }
+
+ @media (max-width: 1040px){
+    .logo{
+        position: relative;
+        left:10px;
+        font-size: 20px;
+    }
+    .home-text h1{
+        font-size: 50px;
+    }
+    .home-text p{
+        font-size: 15px;
+    }
+
+    #menu-icon{
+        right: 80px;
+        display: block;
+    }
+    .sticky #menu-icon{
+        color: var(--text-color);
+    }
+    .home{
+        height: 88vh;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #1067cc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+    .navbar .navButton{
+        display: block;
+        margin: 1.1rem 0 ;
+    }
+    .navbar .dropDownItem{
+        display:inline-block;
+        position: relative;
+        right:155px;
+        margin: auto;
+        z-index: 1;
+        margin: 1;
+    }
+
+    .sticky .navbar a{
+        color: var(--bg-color);
+
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+
+    }
+    .open{
+        right: 0;
+    }
+
+
+    /* check whether this is necessary or not
+    .footerMainCont{
+        width: 50%;
+        margin-bottom: 12px;
+    } */
+ }
+
+ @media (max-width: 575px){
+
+   .home{
+    height: 85vh;
+    transition: .2s;
+   }
+ }

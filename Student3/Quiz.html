@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css"><!--Link to an external stylesheet for custom styling-->
+        
+        <!-- Preconnect to Google Fonts and import font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="footer.css" >
+    <link rel="stylesheet" href="navbar.css">
+    <!-- External boxicons CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    </head>
+
+    <body >
+        <!-- Main container for the entire quiz -->
+        <main class="main">
+
+            <!-- Header section -->
+    <header>
+
+        <!-- Logo and the navigation icon -->
+        <a href= "#" class="logo"> OzExplore </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        <!-- Navigation Menu -->
+        <ul class="navbar">
+            <li> <a href="../Student2/index.html" class="navButton">Home</a></li>
+            <li> <a href="../Student4/imagegallery.html"class="navButton">Destinations</a>
+                
+                <!-- Dropdown menu for destinations -->
+                <div class="dropDown">
+                    <ul>
+                        <li><a href="NSW.html" class="dropDownItem" style="color: black; font-size: 14px;">New South Wales</a> </li>
+                        <li><a href="../Student1/Queensland.html" class="dropDownItem" style="color: black;font-size: 14px;">Queensland</a></li>
+                        <li><a href="../Student2/tasmania.html" class="dropDownItem"style="color: black;font-size: 14px;">Tasmania</a></li>
+                        <li><a href="../Student4/victoria.html" class="dropDownItem"style="color: black;font-size: 14px;">Victoria</a></li>
+                    </ul>
+                </div></li>
+            <li> <a href="../Student1/Shop.html"class="navButton">Shop </a></li>
+            <li> <a href="Quiz.html"class="nowOn navButton">Quiz</a></li>
+            <li> <a href="../Student2/feedback.html"class="navButton">Feedback</a></li>
+            <li> <a href="../Student4/sitemap.html"class="navButton">Sitemap</a></li>
+            <li> <a href="AboutUs.html"class="navButton">About us</a></li>
+        </ul>
+
+    </header>
+            <div class="container">
+            
+                <section class="quiz-section">
+
+                    <div class="quiz-box">
+
+                        <h1>Aussie Escapades: The Quiz</h1>
+
+                        <div class="quiz-header">
+                            <span class="header-score">Score: 0/10</span>
+                        
+                            <!-- Timer element to show the remaining time -->
+                            <div class="timer">
+                                <div class="time-left"><span id="timer">60</span> seconds</div>
+                            </div>
+
+                        </div>
+
+                        <!-- The question is displayed here -->
+                        <h2 class="question-text">Which Australian state is known for its capital city, Sydney, famous for its iconic Opera House and Harbour Bridge?</h2>
+
+                        <div class="option-list">
+                            
+                           <!-- <div class="option">
+                                <span>A. Victoria</span>
+                            </div>
+
+                            <div class="option">
+                                <span>B. New South Wales</span>
+                            </div>
+
+                            <div class="option">
+                                <span>C. Tasmania</span>
+                            </div>
+
+                            <div class="option">
+                                <span>D. Queensland</span>
+                            </div>-->
+
+                        </div>
+
+                        <div class="quiz-footer">
+                            <span class="question-total">1 of 10 Questions</span>
+                            <button class="next-btn">Next</button>
+                        </div>
+                    </div>
+                        <!-- Result box that is displayed at the end of the quiz -->
+                        <div class="result-box">
+                            <h2>Quiz Result!</h2>
+                            <div class="percentage-container">
+                                <div class="circular-progress">
+                                    <span class="progress-value">0%</span>
+                                </div>
+                                 <!-- Display the user's final score -->
+                                <span class="score-text">Your Score 0 out of 10</span>
+                            </div>
+
+                            <div class="buttons"> 
+                                <button class="tryagain-btn">Try Again</button>
+                                <button class="gohome-btn">Go To Home</button>
+                            </div>
+                        </div>
+
+                </section> 
+                <!--the starting point of the quiz-->
+                <section class="home">
+                    <div class="home-content">
+                        <h1>Quiz</h1>
+                        <p>Test Your Knowledge About Australian States</p>
+                        <button class="start-button">Start Quiz</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--the starting point of the quiz-->
+        <div class="popup-info">
+            <h2>Quiz Guide</h2>
+
+            <span class="info">1.Discover Australia's states: Victoria, New South Wales, Tasmania, and Queensland.</span>
+            <span class="info">2.Answer 10 engaging questions about famous landmarks and attractions.</span>
+            <span class="info">3.Test your knowledge of tourism destinations in each state.</span>
+            <span class="info">4.Get instant feedback and learn interesting facts along the way.</span>
+            <span class="info">5.Enjoy a fun virtual tour of Australia's diverse states.</span>
+
+            <div class="button-group">
+
+            <button class="info-button exit-btn">Exit Quiz</button>
+
+            <a href="#" class="info-button continue-btn">Continue</a>
+
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <div class="footerMainCont">
+                <div class="footerLine"></div>
+                <div class="footer">
+                    <div class="footerCompany">
+                        <div class="footerLogo">OzExplore</div>
+                        <div class="footerLogoDesc">
+                            - Discover the magic of Australia with
+                            <span class="footerLogoOnly">OzExplore -</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick links -->
+                    <div class="footerCont">
+                        <div class="footerTitle">QUICK LINKS</div>
+                        <div class="footerQuickLinks">
+                            <ul class="footerQLList">
+                                <li><a href="../Student2/index.html">Home</a></li>
+                                <li><a href="../Student4/imagegallery.html">Destinations</a></li>
+                                <li><a href="../Student1/Shop.html">Shop</a> </li>
+                                <li><a href="Quiz.html">Quiz</a></li>
+                                <li><a href="../Student2/feedback.html">Feedback</a></li>
+                                <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                                <li><a href="AboutUs.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact information -->
+                    <div class="footerCont">
+                        <div class="footerTitle">CONTACT US</div>
+                        <div class="foooterContactInfo">
+                            <ul class="footerCIList">
+                                <li class="footerCIListItems">
+                                    <div class="footerCIName">Sudeepa:</div>
+                                    <div class="footerCINumber">
+                                        <a href="tel:+94770662069">077 066 2069</a>
+                                    </div>
+                                </li>
+                                <li class="footerCIListItems">
+                                    <div class="footerCIName">Vinodhi:</div>
+                                    <div class="footerCINumber">
+                                        <a href="tel:+94717796088">071 779 6088</a>
+                                    </div>
+                                </li>
+                                <li class="footerCIListItems">
+                                    <div class="footerCIName">Dilmi:</div>
+                                    <div class="footerCINumber">
+                                        <a href="tel:+94719500324">071 950 0324</a>
+                                    </div>
+                                </li>
+                                <li class="footerCIListItems">
+                                    <div class="footerCIName">Senuth:</div>
+                                    <div class="footerCINumber">
+                                        <a href="tel:+9471514 7967">071 514 7967</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact information -->
+                    <div class="footerCont">
+                        <div class="footerTitle">FEEDBACK</div>
+                        <div class="footerFeedbackInfo">
+                            <div class="footerFI">Send us an email to :</div>
+                            <div class="footerFEmail">
+                                <a href="../Student2/feedback.html">OzExplore.services@gmail.com</a>
+                            </div>
+                            <div class="footerPageEditor">
+                                <div class="footerFI">Let's see the <a href="PageEditor.html" class="footerEditor">page
+                                        editor</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+
+
+<!-- link to JS -->
+<script type="text/javascript" src="navbarscript.js"> </script>
+
+         <!-- External JavaScript files for handling quiz questions and interactivity -->
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
+
+        
+        
+    </body>
+</html>

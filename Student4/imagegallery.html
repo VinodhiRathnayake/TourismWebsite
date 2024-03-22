@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Title for the webpage -->
+		<title>Image Gallery</title>
+		
+		<!-- Link to navigation bar -->
+		<link rel="stylesheet" href="navbar.css">
+		
+		<!-- Link to footer-->
+		<link rel="stylesheet" href="footer.css">
+		
+		<!-- Link to css sytling sheet -->
+		<link rel="stylesheet" href="imagegallery.css">	
+		
+		<!-- External boxicons CSS file -->
+        <link rel="stylesheet"
+    
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	</head>
+	
+	<body>
+	
+	<!-- Header section -->
+    <header>
+
+        <!-- Logo and the navigation icon -->
+        <a href= "#" class="logo"> OzExplore </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        <!-- Navigation Menu -->
+        <ul class="navbar">
+            <li><a href="../Student2/index.html" class="navButton">Home</a></li>
+            <li><a href="imagegallery.html" class="nowOn navButton">Destinations</a>
+                
+                <!-- Dropdown menu for destinations -->
+                <div class="dropDown">
+                    <ul>
+                        <li><a href="../Student3/NSW.html" class="dropDownItem" style="color: black; font-size: 14px;">South Wales</a> </li>
+                        <li><a href="../Student1/Queensland.html" class="dropDownItem" style="color: black;font-size: 14px;">Queensland</a></li>
+                        <li><a href="../Student2/tasmania.html" class="dropDownItem" style="color: black;font-size: 14px;">Tasmania</a></li>
+                        <li><a href="victoria.html" class="dropDownItem" style="color: black;font-size: 14px;">Victoria</a></li>
+                    </ul>
+                </div></li>
+            <li> <a href="../Student1/Shop.html" class="navButton">Shop </a></li>
+            <li> <a href="../Student3/Quiz.html" class="navButton">Quiz</a></li>
+            <li> <a href="../Student2/feedback.html" class="navButton">Feedback</a></li>
+            <li> <a href="sitemap.html" class="navButton">Sitemap</a></li>
+            <li> <a href="../Student3/AboutUs.html" class="navButton">About us</a></li>
+        </ul>
+
+    </header>
+	
+	<!-- link to JS -->
+	<script src="script.js"> </script><br><br><br><br><br><br>
+	
+	
+	
+	<!-- Buttons to change font size -->
+	<div class="alltextbuttons">
+	
+		<button id="fontbutton1" class="fontbutton" onclick="changeFontSize('fontbutton1')"><b>A</b></button>
+		<button id="fontbutton2" class="fontbutton" onclick="changeFontSize('fontbutton2')"><b>A</b></button>
+		<button id="fontbutton3" class="fontbutton" onclick="changeFontSize('fontbutton3')"><b>A</b></button>
+	
+	</div><br>
+	
+	<!-- Buttons to change colours of webpage -->
+	<div>
+		<button id="button1" class="button" onclick="changeColors('button1')"></button>
+		<button id="button2" class="button" onclick="changeColors('button2')"></button>
+		<button id="button3" class="button" onclick="changeColors('button3')"></button>
+		<button id="button4" class="button" onclick="changeColors('button4')"></button>
+	</div>
+	
+	<!-- Link to js for image gallery -->
+	<script src="imagegallery.js"> </script>
+	
+	<!-- Heading of the page -->
+	<h1><i>Gallery Highlights</i></h1>
+	
+	<!-- Image gallery section -->
+	<div class="image">
+		
+		<!-- Container for phillip island -->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/phillipisland.jpg" alt="Phillip Island" >
+				<p>Phillip Island</p>
+			</div>
+			
+			<!-- Hover content for phillip island-->
+			<div class="hover-content" style="margin-left:570px;">
+				<img src="images/phillipisland.jpg" alt="Enlarged Phillip Island" >
+				<p><b>Phillip Island</b>, situated off the coast of Victoria, Australia, is a captivating haven of wildlife and natural beauty. 
+				It is most renowned for its adorable Little Penguins, which grace the shores with their evening parade.
+				Apart from the heartwarming penguin parade, the island offers a myriad of attractions, including pristine beaches for surfing,
+				rugged cliffs for breathtaking views, and wildlife parks for encounters with native Australian animals like kangaroos and koalas.
+				Phillip Island's allure lies in its ability to provide a perfect blend of nature and wildlife experiences,
+				making it a must-visit destination for travelers exploring the wonders of Australia.</p>
+	
+			</div>
+		</div>
+
+		<!-- Container for melbourne zoo -->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/melbournezoo.jpg" alt="Melbourne zoo" >
+				<p>Melbourne zoo</p>
+			</div>
+			
+			<!-- Hover content for melborune zoo -->
+			<div class="hover-content" style="margin-left:270px;">
+				<img src="images/melbournezoo.jpg" alt="Enlarged Melbourne zoo">
+				<p><b>Melbourne Zoo</b>, located in the city of Melbourne, Australia, 
+				is a prominent zoological park that offers a captivating experience for visitors of all ages.
+				The zoo is one of the oldest in Australia 
+				renowned for its commitment to wildlife conservation and education. 
+				Visitors can embark on an exciting journey to explore habitats that mimic the native environments of these animals.
+				From majestic elephants and playful monkeys to fascinating reptiles and colorful birds,
+				Melbourne Zoo offers a unique opportunity to connect with wildlife and
+				gain a deeper understanding of the importance of conservation efforts. 
+				With its lush surroundings and conservation initiatives, Melbourne Zoo remains a cherished destination that fosters 
+				a sense of wonder and appreciation for the animal kingdom.</p>
+			</div>	
+		</div>	
+
+		<!-- Container for Springbrook-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/springbrook.jpg" alt="Springbrook">
+				<p>Springbrook Park</p>
+			</div>
+
+			<!-- Hover content for springbrook -->
+			<div class="hover-content" style="left: -29px;">
+				<img src="images/springbrook.jpg" alt="Enlarged Springbrook">
+				<p><b>Springbrook Park</b>, nestled in Queensland, Australia, 
+				is a natural wonderland that captivates visitors with its breathtaking beauty. 
+				This national park, established in 1990, boasts a diverse range of ecosystems, 
+				from lush rainforests and cascading waterfalls to ancient volcanic formations and expansive lookouts. 
+				The park is renowned for its stunning waterfalls, such as the picturesque Purlingbrook Falls and the mesmerizing Natural Bridge. 
+				Visitors can explore an array of walking trails that lead to these natural gems. 
+				For nature enthusiasts, Springbrook Park offers an unforgettable experience, 
+				where the harmony of nature's wonders leaves a lasting impression, 
+				making it a must-visit destination for anyone exploring the natural treasures of Australia.</p>
+			</div>	
+		</div>	
+
+		<!--Container for roma street parkland-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/romastreetparkland.jpg" alt="Roma street parkland" >
+				<p>Roma street parkland</p>
+			</div>
+			
+			<!-- Hover content for roma street parkland -->
+			<div class="hover-content" style="left: -329px;">
+				<img src="images/romastreetparkland.jpg" alt="Enlarged Roma street parkland" >
+				<p><b>Roma Street Parkland</b>, situated in the heart of Brisbane, Australia, 
+				is a delightful urban oasis that enchants locals and tourists alike. 
+				With a diverse range of themed gardens, tranquil lakes, and vibrant flower displays, 
+				Roma Street Parkland offers a serene escape from the bustling city life. 
+				Visitors can meander through the lush pathways, bask in the beauty of subtropical plants, 
+				and enjoy picnics in the shade of towering trees. The parkland also hosts various events and concerts throughout the year, 
+				providing a dynamic cultural experience for all. Whether it's a leisurely stroll, a family outing, 
+				or a peaceful moment of reflection, Roma Street Parkland presents a harmonious blend of nature and urbanity, 
+				making it a cherished gem in the heart of Brisbane.</p>
+			</div>	
+		</div>		
+	</div>
+	
+	<!-- content for Australia-->
+	<div class="australia">
+		<div class="hover-container">
+			<img src="images/australia2.jpg" alt="Enlarged Australia" style="float:left;">
+			<p><b>Australia</b>, a vast and diverse country located in the 
+			Southern Hemisphere, is known for its unique wildlife, stunning landscapes, and vibrant cities.
+			It is comprised of six states and two territories. 
+			The states include New South Wales, Victoria, Queensland, South Australia, Western Australia, and 
+			Tasmania, while the territories are the Australian Capital Territory (ACT) and the Northern Territory.
+			Australia's tourism industry flourishes as adventurers seek to explore its stunning beaches, 
+			indulge in thrilling water sports, and embark on unforgettable wildlife encounters.
+			With its picturesque landscapes, cultural treasures, and warm hospitality, Australia continues to captivate adventurers,
+			offering a plethora of experiences that leave a lasting imprint on the hearts of all who visit.</p>
+	
+		</div>	
+	</div>
+	
+	
+	<div class="image">
+		
+		<!--Container for Bridestowe-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/bridestowe.jfif" alt="Bridestowe" >
+				<p>Bridestowe Estate</p>
+			</div>
+			
+			<!-- Hover content for Bridestowe -->
+			<div class="hover-content2" style="margin-left:570px;">
+				<img src="images/bridestowe.jfif" alt="Enlarged Bridestowe"  >
+				<p><b>Bridestowe Lavender Estate</b> is a picturesque and enchanting destination located in Tasmania, Australia.  
+				Nestled amidst the stunning landscapes of northeast Tasmania, 
+				the estate offers visitors a sensory delight with its sweet and fragrant lavender aroma. 
+				The farm is a mesmerizing sight during the flowering season when the lavender fields are in full bloom, 
+				creating a stunning purple carpet that stretches as far as the eye can see. 
+				The estate also boasts a charming gift shop that sells an array of lavender-based products, 
+				from essential oils to artisanal soaps. For nature lovers and those seeking tranquility, 
+				Bridestowe Lavender Estate is a must-visit destination that promises a captivating and relaxing experience amidst the splendor of lavender fields.</p>
+			</div>	
+		</div>
+
+		<!--Container for cradlemountain-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/cradlemountain.jpg" alt="Cradle mountain" >
+				<p>Cradle Mountain Lake</p>
+			</div>
+			
+			<!-- Hover content for cradlemountain -->
+			<div class="hover-content2" style="margin-left:270px;">
+				<img src="images/cradlemountain.jpg" alt="Enlarged Cradle mountain" >
+				<p><b>Cradle Mountain-Lake</b> in St Clair National Park is a pristine wilderness area located in Tasmania, Australia. 
+				It is renowned for its breathtaking beauty, encompassing rugged mountain peaks, ancient rainforests, and crystal-clear alpine lakes. 
+				At the heart of the park stands Cradle Mountain, an iconic landmark that attracts hikers and nature enthusiasts from around the world. 
+				The park offers a network of well-marked walking trails, including the famous Overland Track, 
+				which takes hikers on a multi-day journey through some of Australia's most spectacular landscapes. 
+				Lake St Clair,provides a serene setting for boating, fishing, and taking in the stunning reflections of surrounding mountains.
+				Whether it's the thrill of adventure or the desire for peaceful contemplation, this place offers an enriching experience 
+				in the heart of Tasmania's wilderness.</p>
+			</div>	
+		</div>	
+
+		<!--Container for sydneybridge-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/sydneybridge.jpg" alt="Sydney Bridge">
+				<p>Sydney Bridge</p>
+			</div>	
+			
+			<!-- Hover content for sydneybridge -->
+			<div class="hover-content2"  style="margin-left:-29px;">
+				<img src="images/sydneybridge.jpg" alt="Enlarged Sydney Bridge">
+				<p><b>The Sydney Harbour Bridge</b>, an iconic engineering marvel, is a symbol of Sydney, Australia, 
+				and a celebrated landmark worldwide.
+				This impressive steel arch bridge connects the Sydney Central Business District to the North Shore suburbs. 
+				The bridge offers breathtaking views of the Sydney Opera House and the sparkling harbor below.  
+				Today, the Sydney Harbour Bridge is not only a key transportation route but also a popular destination 
+				for thrill-seekers who enjoy the exhilarating experience of BridgeClimb, 
+				offering panoramic views from the bridge's summit. As a timeless symbol of Sydney's heritage and modernity, 
+				the Sydney Harbour Bridge remains an essential part of the city's identity and a must-visit attraction for locals and tourists alike.
+
+			</p>
+			</div>	
+		</div>	
+
+		<!--Container for sydneybridge-->
+		<div class="hover-container">
+			<div class="container">
+				<img src="images/bondibeach.jpg" alt="Bondi beach" >
+				<p>Bondi beach</p>
+			</div>
+			
+			<!-- Hover content for sydneybridge -->
+			<div class="hover-content2"  style="margin-left:-329px;">
+				<img src="images/bondibeach.jpg" alt="Enlarged Bondi beach">
+				<p><b>Bondi Beach</b>, situated in Sydney, New South Wales, is an iconic gem of Australia's coastline. 
+				Its wide stretch of golden sand, crashing waves, and vibrant beach culture make it a must-visit destination for locals and tourists alike. 
+				Whether you're a sunbather, surfer, or simply seeking a laid-back atmosphere, 
+				Bondi has something for everyone. The beach's inviting waters and lifeguard-patrolled swimming areas ensure a safe and enjoyable experience. 
+				Beyond the beach, the surrounding promenade offers an array of trendy cafes, restaurants, and shops, 
+				creating a lively and bustling atmosphere. With its breathtaking views, lively energy, and picture-perfect coastal setting, 
+				Bondi Beach captures the essence of Australia's beach lifestyle like no other.</p>
+			</div>	
+		</div>		
+	</div><br><br><br><br>
+	
+	
+	<!-- Footer section -->
+<footer>
+    <div class="footerMainCont">
+        <div class="footerLine"></div>
+        <div class="footer">
+            <div class="footerCompany">
+                <div class="footerLogo">OzExplore</div>
+                <div class="footerLogoDesc">
+                    - Discover the magic of Australia with
+                    <span class="footerLogoOnly">OzExplore -</span>
+                </div>
+            </div>
+            
+            <!-- Quick links -->
+            <div class="footerCont">
+                <div class="footerTitle">QUICK LINKS</div>
+                <div class="footerQuickLinks">
+                    <ul class="footerQLList">
+                        <li><a href="../Student2/index.html">Home</a></li>
+                        <li><a href="imagegallery.html">Destinations</a></li>
+                        <li><a href="../Student1/Shop.html">Shop</a> </li>
+                        <li><a href="../Student3/Quiz.html">Quiz</a></li>
+                        <li><a href="../Student2/feedback.html">Feedback</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="../Student3/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact information -->
+            <div class="footerCont">
+                <div class="footerTitle">CONTACT US</div>
+                <div class="foooterContactInfo">
+                    <ul class="footerCIList">
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Sudeepa:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94770662069">077 066 2069</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Vinodhi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94717796088">071 779 6088</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Dilmi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94719500324">071 950 0324</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Senuth:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+9471514 7967">071 514 7967</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact information -->
+            <div class="footerCont">
+                <div class="footerTitle">FEEDBACK</div>
+                <div class="footerFeedbackInfo">
+                    <div class="footerFI">Send us an email to :</div>
+                    <div class="footerFEmail">
+                        <a href="../Student2/feedback.html">OzExplore.services@gmail.com</a>
+                    </div>
+                    <div class="footerPageEditor">
+                        <div class="footerFI">Let's see the <a href="pageeditor.html" class="footerEditor">page
+                                editor</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>   
+	
+	
+	
+	</body>
+</html>
