@@ -1,0 +1,106 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    background-color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .all {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 100px auto;
+  }
+  
+  .cusDetails {
+    -ms-flex: 50%;
+    flex: 50%;
+  }
+ 
+  .cusDetails,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  /* Container*/
+  .container {
+    background-color: #e2edf6;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 11px;
+    display: block;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+/* payment methods cards */
+  .cards {
+    max-width: 40px; 
+    height: auto; 
+  }
+  
+  .submit-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 60px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 17px;
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  /*Show Total price have to Pay Properties*/
+  span.price {
+    float: right;
+    color: grey;
+  }
+ 
+  .total{
+    display: flex;
+  }
+  .tot{
+    margin-right: 10px;
+  }
+
+  /*Page responsive*/
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .all {
+      flex-direction: column-reverse;
+    }
+    
+  }

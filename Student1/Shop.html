@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website with Payment</title>
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navBar.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- External boxicons CSS file -->
+        <link rel="stylesheet"
+    
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    </head>
+    <body>
+    <!--Navbar-->
+    <header>
+        <!-- Logo and the navigation icon -->
+        <a href= "#" class="logo"> OzExplore </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        <!-- Navigation Menu -->
+        <ul class="navbar">
+            <li> <a href="../Student2/index.html" class="navButton">Home</a></li>
+            <li> <a href="../Student4/imagegallery.html" class=" navButton">Destinations</a>
+                
+                <!-- Dropdown menu for destinations -->
+                <div class="dropDown">
+                    <ul>
+                        <li><a href="../Student3/NSW.html" class="dropDownItem" style="color: black; font-size: 14px;">South Wales</a> </li>
+                        <li><a href="Queensland.html" class="dropDownItem" style="color: black;font-size: 14px;">Queensland</a></li>
+                        <li><a href="../Student2/tasmania.html" class="dropDownItem" style="color: black;font-size: 14px;">Tasmania</a></li>
+                        <li><a href="../Student4/Victoria.html" class="dropDownItem" style="color: black;font-size: 14px;">Victoria</a></li>
+                    </ul>
+                </div></li>
+            <li> <a href="#top" class="nowOn navButton">Shop </a></li>
+            <li> <a href="../Student3/Quiz.html" class="navButton">Quiz</a></li>
+            <li> <a href="../Student2/feedback.html" class="navButton">Feedback</a></li>
+            <li> <a href="../Student4/sitemap.html" class="navButton">Sitemap</a></li>
+            <li> <a href="../Student3/AboutUs.html" class="navButton">About us</a></li>
+        </ul>
+
+            
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content"></div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Buy Button-->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!--Close cart-->
+                <img src="sdImages/close-cart.png" alt="close icon" id="close-cart">
+                
+            </div>  
+               
+    </header>
+    
+         <!-- shop -->
+        <section class="shop container">
+            <h2 class="section-tittle">Shop Products</h2>
+        <img src="sdImages/add-cart.jpeg" id="cart-icon" alt="show the cart" data-quantity="0">
+
+        
+            <!--shop Content-->
+            <div class="shop-content">
+                <!--Box 1-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item1.jpg" alt="Boomerang" class="product-img">
+                    <h2 class="product-tittle">Boomerang</h2>
+                    <span class="price">$25</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 2-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item2.jpg" alt="leather hat" class="product-img">
+                    <h2 class="product-tittle">Leather Hat</h2>
+                    <span class="price">$50</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 3-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item3.jpg" alt="koalabear" class="product-img">
+                    <h2 class="product-tittle">Koalabear</h2>
+                    <span class="price">$50</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 4-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item4.jpg" alt="Tablemat" class="product-img">
+                    <h2 class="product-tittle">Tablemat</h2>
+                    <span class="price">$10</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 5-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item5.jpg" alt="Ugg Boots" class="product-img">
+                    <h2 class="product-tittle">Ugg Boots</h2>
+                    <span class="price">$2</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 6-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item6.jpg" alt="Didgeridoo" class="product-img">
+                    <h2 class="product-tittle">Didgeridoo</h2>
+                    <span class="price">$25</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 7-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item7.jpg" alt="Colabear Couple Keytag" class="product-img">
+                    <h2 class="product-tittle">Colabear Couple Keytag</h2>
+                    <span class="price">$20</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+                <!--Box 8-->
+                <div class="product-box">
+                    <img src="sdImages/List1Item8.jpg" alt="Keytag" class="product-img">
+                    <h2 class="product-tittle">Keytag</h2>
+                    <span class="price">$25</span>
+                    <img src="sdImages/add-cart.jpeg" alt="add to cart" class="add-cart">
+                </div>
+
+            </div>
+            </section>
+                   <!-- Footer section -->
+<footer>
+    <div class="footerMainCont">
+        <div class="footerLine"></div>
+        <div class="footer">
+            <div class="footerCompany">
+                <div class="footerLogo">OzExplore</div>
+                <div class="footerLogoDesc">
+                    - Discover the magic of Australia with
+                    <span class="footerLogoOnly">OzExplore -</span>
+                </div>
+            </div>
+            
+            <!-- Quick links -->
+            <div class="footerCont">
+                <div class="footerTitle">QUICK LINKS</div>
+                <div class="footerQuickLinks">
+                    <ul class="footerQLList">
+                        <li><a href="../Student2/index.html">Home</a></li>
+                        <li><a href="../Student4/imagegallery.html">Destinations</a></li>
+                        <li><a href="Shop.html">Shop</a> </li>
+                        <li><a href="../Student3/Quiz.html">Quiz</a></li>
+                        <li><a href="../Student2/feedback.html">Feedback</a></li>
+                        <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                        <li><a href="../Student3/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact information -->
+            <div class="footerCont">
+                <div class="footerTitle">CONTACT US</div>
+                <div class="foooterContactInfo">
+                    <ul class="footerCIList">
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Sudeepa:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94770662069">077 066 2069</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Vinodhi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94717796088">071 779 6088</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Dilmi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+94719500324">071 950 0324</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Senuth:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:+9471514 7967">071 514 7967</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact information -->
+            <div class="footerCont">
+                <div class="footerTitle">FEEDBACK</div>
+                <div class="footerFeedbackInfo">
+                    <div class="footerFI">Send us an email to :</div>
+                    <div class="footerFEmail">
+                        <a href="feedback.html">OzExplore.services@gmail.com</a>
+                    </div>
+                    <div class="footerPageEditor">
+                        <div class="footerFI">Let's see the <a href="PageEditor.html" class="footerEditor">page
+                                editor</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+ 
+
+        
+        <!--link to js-->
+        <script src="sell.js"></script>
+
+    </body>
+    
+
+    
+</html>

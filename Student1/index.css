@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    text-decoration: none;
+}
+
+
+/*Splash Screen*/
+.splashScreen {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Color*/
+.bg-gradiant {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(10deg,rgb(62, 206, 250),rgb(1, 2, 19));
+}
+/* "OzExplore" */
+h1 {
+    font-size: 70px;
+    color: rgb(247, 199, 128);
+}
+/* "The Island Sanctuary of Australia" */
+h2 {
+    font-size: 40px;
+    color: aquamarine;
+}
+
+/* Create a Table */
+table {
+    width: 100%;
+    margin: 0 auto; /* Add this line to center the table */
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+  
+th,
+td {
+    text-align: center; /* Add this line to center the content within cells */
+    border: 1px solid rgb(240, 232, 232); /* Add border around cells */
+    padding: 10px 30px 10px 30px;
+}
+th {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ListOfNames td {
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tableheader {
+    text-align: center;
+}
+
+/* Hide the splash screen with a fade-out effect */
+.splashScreen.display-none {
+    opacity: 0;
+    z-index: -10;
+    transition: all 4s;
+}
+
+/* Define a keyframe animation named "fadeIn" */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Initial state for elements with the class "begin" */
+.begin {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
