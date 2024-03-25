@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Courgette&family=Lobster&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    
+    <!-- External boxicons CSS file -->
+    <link rel="stylesheet"
+    
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+
+    <!-- Preconnect to Google Fonts and import font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header>
+
+        <a href= "#" class="logo"> OzExplore </a>
+        <div class="bx bx-menu" id="menu-icon">  </div>
+
+
+        <!-- Navigation Menu -->
+        <ul class="navbar">
+            <li> <a href="index.html"class="navButton">Home</a></li>
+            <li> <a href="../Student4/imagegallery.html">Destinations</a>
+                <div class="dropDown">
+                    <ul>
+                        <li><a href="../Student3/NSW.html" class="dropDownItem" style="color: black; font-size: 14px;">South Wales</a> </li>
+                        <li><a href="../Student1/Queensland.html" class="dropDownItem" style="color: black;font-size: 14px;">Queensland</a></li>
+                        <li><a href="tasmania.html" class="dropDownItem"style="color: black;font-size: 14px;">Tasmania</a></li>
+                        <li><a href="../Student4/victoria.html" class="dropDownItem"style="color: black;font-size: 14px;">Victoria</a></li>
+                    </ul>
+                </div></li>
+            <li> <a href="../Student1/Shop.html"class="navButton">Shop </a></li>
+            <li> <a href="../Student3/Quiz.html"class="navButton">Quiz</a></li>
+            <li> <a href="#top"class="nowOn navButton">Feedback</a></li>
+            <li> <a href="../Student4/sitemap.html"class="navButton">Sitemap</a></li>
+            <li> <a href="../Student3/AboutUs.html"class="navButton">About us</a></li>
+        </ul>
+
+    </header>
+
+
+
+    <form name="feedbackForm" onsubmit="return validateAndSendEmail()">
+        <div class="backgroundImg">
+            <img src="Images/feedback.jpg" alt="">
+        </div>
+        <div class="feedback">
+            <div class="feedbackCard" id="radioCont">
+                <div class="feedbackTitle">
+                    How satisfied were you with our website today. Rate us
+                    from 1 to 10!
+                </div>
+                <div class="feedbackRadioSection">
+                    <div class="feecbackRating">
+                        <label for="1">1</label>
+                        <input type="radio" name="rating" id="1" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="2">2</label>
+                        <input type="radio" name="rating" id="2" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="3">3</label>
+                        <input type="radio" name="rating" id="3" />
+                    </div>
+                    <div class="feecbackRating" 4>
+                        <label for="4">4</label>
+                        <input type="radio" name="rating" id="4" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="5">5</label>
+                        <input type="radio" name="rating" id="5" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="6">6</label>
+                        <input type="radio" name="rating" id="6" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="7">7</label>
+                        <input type="radio" name="rating" id="7" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="8">8</label>
+                        <input type="radio" name="rating" id="8" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="9">9</label>
+                        <input type="radio" name="rating" id="9" />
+                    </div>
+                    <div class="feecbackRating">
+                        <label for="10">10</label>
+                        <input type="radio" name="rating" id="10" />
+                    </div>
+                </div>
+                <div id="feedbackRadioError" class="error">Please select one out this field.</div>
+            </div>
+            <div class="feedbackCard" id="textCont">
+                <div class="feedbackTitle">Can you suggest aspects for us to focus on for development?</div>
+                <input type="text" class="feedbackText" id="feedbackText" placeholder="Type here" />
+                <div id="feedbackTextError" class="error text">Please fill out this field.</div>
+            </div>
+            <div class="feedbackCard" id="modeCont">
+                <div class="feedbackTitle">How did you get to know of <span class="logoName">OzExplore</span>?</div>
+                <select name="mode" id="mode" class="feedbackdropDownMenu" required>
+                    <option value="notSelected">--Please Select--</option>
+                    <option value="Email">Email</option>
+                    <option value="Friends">Friends</option>
+                    <option value="SocialMedia">Social Media</option>
+                    <option value="Advertisement">Advertisement</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div id="feedbackDropdownError" class="error">Please select one out this field.</div>
+            </div>
+            <div class="submit">
+                <input type="submit" class="submitButton"></input>
+            </div>
+        </div>
+
+
+    </form>
+ <!--footer-->
+
+<footer>
+    <div class="footerMainCont">
+        <div class="footerLine"></div>
+        <div class="footer">
+            <div class="footerCompany">
+                <div class="footerLogo">OzExplore</div>
+                <div class="footerLogoDesc">
+                    - Discover the magic of Australia with
+                    <span class="footerLogoOnly">OzExplore -</span>
+                </div>
+            </div>
+            <div class="footerCont">
+                <div class="footerTitle">QUICK LINKS</div>
+                <div class="footerQuickLinks">
+                    <ul class="footerQLList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="../Student4/imagegallery.html">Destinations</a></li>
+                        <li><a href="../Student1/Shop.html">Shop</a> </li>
+                        <li><a href="../Student3/Quiz.html">Quiz</a></li>
+                        <li><a href="#top">Feedback</a></li>
+                        <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                        <li><a href="../Student3/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerCont">
+                <div class="footerTitle">CONTACT US</div>
+                <div class="foooterContactInfo">
+                    <ul class="footerCIList">
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Sudeepa:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:0770662069">077 066 2069</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Vinodhi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:0717796088">071 779 6088</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Dilmi:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:0719500324">071 950 0324</a>
+                            </div>
+                        </li>
+                        <li class="footerCIListItems">
+                            <div class="footerCIName">Senuth:</div>
+                            <div class="footerCINumber">
+                                <a href="tel:0715147967">071 514 7967</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footerCont">
+                <div class="footerTitle">FEEDBACK</div>
+                <div class="footerFeedbackInfo">
+                    <div class="footerFI">Send us an email to :</div>
+                    <div class="footerFEmail">
+                        <a href="#top">OzExplore.services@gmail.com</a>
+                    </div>
+                    <div class="footerPageEditor">
+                        <div class="footerFI">Let's see the <a href="senuth.html" class="footerEditor">page
+                                editor</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>   
+    <script src="feedback.js"></script>
+
+    <!-- Navbar JS -->
+    <script type="text/javascript" src="script.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    padding: 80px 5%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.1) url(images/home-page-image.jpg);
+    background-blend-mode: darken ;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  
+}
+.home-text h1{
+    position: relative;
+    top: 20px;
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: 'Paytone One', sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+
+}
+.home-text p{
+    position: relative;
+    top: 50px;
+    color: #ffffffbf;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+
+}
+.introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: row;
+        margin: 20px 10px;
+        padding: 15px;
+        border-radius: 7px;
+}
+
+/* Introduction image  */
+
+.introImageCont {
+    height: 100%;
+    width: 55%;
+}
+.introImage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.introDesc {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.introTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.introDesc p {
+    width: 80%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+/* ------------     Introduction end    ------------------------------------------------------ */
+
+/* ------------     Image Grid start    ------------------------------------------------------ */
+.image {
+    border-radius: 7px;
+    transition: all 0.4s;
+}
+.imageCont:hover .image {
+    transform: scale(1.1);
+}
+.imageCont:hover .hoverText {
+    transform: translateY(-150px);
+    z-index: 10;
+}
+.image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --num-rows: 2;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    overflow: hidden;
+}
+.imageCont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+.image-grid .hoverText {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    background: linear-gradient(to top, #000, transparent);
+    font-size: 50px;
+    transition: ease 0.4s;
+}
+.image-grid-col-1 {
+    grid-column: span 1;
+}
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+@media screen and (max-width: 800px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+/* ------------ Image Grid end ------------------------------------------------------ */
+ 

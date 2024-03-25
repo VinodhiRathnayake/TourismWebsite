@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #439c80; */
+    font-family: 'Poppins', sans-serif;
+}
+.backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: calc(100% + 70px);
+    width: 100%;
+    margin-top: -70px;
+}
+
+.backgroundImg img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+form {
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px 0px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback {
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.712);
+    backdrop-filter: blur(10px);
+}
+.feedbackCard {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid ;
+    border-color: #a1a1a1;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+.feedbackRadioSection {
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.feecbackRating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedbackText {
+    margin-top: 20px;
+    width: 70%;
+    height: 80px;
+    border-style: none;
+    border: 1px solid #a1a1a1;
+    border-radius: 10px;
+    padding: 20px;
+}
+.submit {
+    width: 70%;
+    display: flex;
+    justify-content:flex-end;
+}
+.submitButton {
+    border-style: none;
+    background-color: #e96b0a;
+    color: white;
+    height: 35px;
+    width: 80px;
+    border-radius: 35px;
+    font-size: 16px;
+    transition: ease 0.2s;
+}
+.submitButton:hover {
+    background-color: #69d4b2;
+    box-shadow: #a1a1a1;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* .radio, .text {display: none;} */
+
+/* .radio.show, .text.show {display: block;} */
+.logoName {
+    font-family: "Lobster", cursive;
+    font-size: 17px;
+}
+.feedbackdropDownMenu {
+    width: 75%;
+    margin-top: 20px;
+    border-style: none;
+    border: 1px solid #a1a1a1;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.feedbackdropDownMenu option {
+    font-size: 14px;
+}
