@@ -1,0 +1,28 @@
+body{
+	background-color:#B7E5DD ;
+
+}
+
+h1{
+	background-color:white;
+
+}
+
+/* Styling the text */
+p{
+	line-height: 1.4;
+	font-size: 19px;
+}
+
+.content{
+	text-align:center;
+}
+
+/* Styling the links */
+.content a {
+  text-decoration: underline;
+}
+
+
+
+

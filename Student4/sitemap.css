@@ -1,0 +1,106 @@
+
+/* set the background color for the webpage*/
+body{
+	background-color:#b0c4de;
+}
+/* sytling the image and text*/
+figure{
+	position:relative;
+	max-width:1700px;
+}
+
+figcaption{
+	position: absolute;
+	top: 350px; 
+	left: 55px; 
+	font-size: 100px; 
+	color: #40B5AD; 
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+	
+}
+
+/* Styling the image */
+img{
+	width: 100%;
+	max-width: 1700px;
+	max-height: 500px;
+	height: auto;	
+}
+
+/* Styling the rectangles */			
+.rectset{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+			
+}
+
+/* Styling content rectangles */
+.content{
+	margin-top:-6%;
+	margin-left:45px;
+}
+
+
+
+/* Hover effect for rectangles */ 	
+.rectset svg:hover rect {
+	stroke:#ff033e;
+}
+
+.rectset svg:visited rect{
+	stroke:#c4c3d0;
+}
+
+/*Hover effect for content rectangles */
+.content svg:hover rect {
+	stroke:#ff033e;
+}
+
+.content svg:visited rect {
+	stroke:#c4c3d0;
+}
+
+	
+
+/* Styling the main rectangle of home section*/		
+.mainrect{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin-top: 100px;
+	margin-bottom: -50px;		
+}
+
+/* Hover effects for main rectangle of home section */ 		
+.mainrect svg:hover rect{
+	stroke:#ff033e;
+}
+		
+.mainrect svg:visited rect{
+	stroke:#c4c3d0;
+}
+
+/* styling horizontal rule*/		
+.horizontalrule{
+	display: flex;
+	justify-content: center;			
+}
+
+/* styling vetical rule */		
+.verticalrule {
+	display: flex;
+	justify-content: center;
+	align-items: center;		
+}
+ /* styling text */		
+.text{
+	font-size:17px;
+}
+
+/* styling vetical rule set*/	
+.verticalruleset{
+	display:flex;
+}
+
